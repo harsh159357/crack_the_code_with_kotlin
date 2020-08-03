@@ -33,9 +33,23 @@ fun Int.reverseItKotlinWay(): Int {
     return result;
 }
 
+fun reverseUsingLong(x: Int): Int {
+    var x = x
+    var res: Long = 0
+    while (x != 0) {
+        res = res * 10 + x % 10
+        x = x / 10
+    }
+    return if (res < Int.MIN_VALUE || res > Int.MAX_VALUE) {
+        0
+    } else {
+        res.toInt()
+    }
+}
 fun main() {
     println((reverse(-555)))
     println(123.reverseItKotlinWay())
+    println(reverseUsingLong(-123))
 }
 
 
