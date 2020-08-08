@@ -1,9 +1,11 @@
 package com.harsh.sharma.leetcode.easy
 
 /*
+
         26. Remove Duplicates from Sorted Array
 
         https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
  */
 
 fun removeDuplicates(nums: IntArray): Int {
