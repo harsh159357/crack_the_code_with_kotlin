@@ -34,7 +34,10 @@ fun removeElement2(nums: IntArray, `val`: Int): Int {
 
 fun main() {
     println(removeElement(intArrayOf(3, 2, 2, 3), 3))
+
     println(removeElement(intArrayOf(0,1,2,2,3,0,4,2), 3))
+
     println(removeElement2(intArrayOf(3, 2, 2, 3), 3))
+
     println(removeElement2(intArrayOf(0,1,2,2,3,0,4,2), 3))
 }

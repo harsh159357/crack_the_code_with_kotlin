@@ -3,7 +3,6 @@ package com.harsh.sharma.leetcode.easy
 
     7. Reverse Integer
 
-
     https://leetcode.com/problems/reverse-integer/
 
  */
@@ -51,7 +50,9 @@ fun reverseUsingLong(x: Int): Int {
 }
 fun main() {
     println((reverse(-555)))
+
     println(123.reverseItKotlinWay())
+
     println(reverseUsingLong(-123))
 }
 

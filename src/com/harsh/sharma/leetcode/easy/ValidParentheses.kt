@@ -4,8 +4,9 @@ import java.util.*
 
 /*
 
-        20. Valid Parentheses
-        https://leetcode.com/problems/valid-parentheses/
+    20. Valid Parentheses
+
+    https://leetcode.com/problems/valid-parentheses/
 
  */
 
@@ -34,8 +35,12 @@ fun isValid(s: String): Boolean {
 
 fun main() {
     println(if (isValid("()")) "Valid" else "Not Valid")
+
     println(if (isValid("()[]{}")) "Valid" else "Not Valid")
+
     println(if (isValid("(]")) "Valid" else "Not Valid")
+
     println(if (isValid("([)]")) "Valid" else "Not Valid")
+
     println(if (isValid("{[]}")) "Valid" else "Not Valid")
 }

@@ -2,17 +2,12 @@ package com.harsh.sharma.leetcode.easy
 
 /*
 
-        9. Palindrome Number
+    9. Palindrome Number
 
-        https://leetcode.com/problems/palindrome-number/
+    https://leetcode.com/problems/palindrome-number/
 
  */
 
-fun main() {
-    println(isPalindrome(-121))
-    println(isPalindrome2(-121))
-    println(isPalindrome3(-121))
-}
 
 // This attempt is not valid as problem requirements are not to convert it to string
 fun isPalindrome(x: Int): Boolean {
@@ -55,6 +50,14 @@ fun isPalindrome3(x: Int): Boolean {
     }
 
     return (temp == revertedNumber || temp == revertedNumber/10)
+}
+
+fun main() {
+    println(isPalindrome(-121))
+
+    println(isPalindrome2(-121))
+
+    println(isPalindrome3(-121))
 }
 
 

@@ -2,9 +2,9 @@ package com.harsh.sharma.leetcode.easy
 
 /*
 
-        13. Roman to Integer
+    13. Roman to Integer
 
-        https://leetcode.com/problems/roman-to-integer/
+    https://leetcode.com/problems/roman-to-integer/
 
  */
 
@@ -35,7 +35,10 @@ fun romanToInt(s: String): Int {
 
 fun main() {
     println("III = ${romanToInt("III")}")
+
     println("IV = ${romanToInt("IV")}")
+
     println("IX = ${romanToInt("LVIII")}")
+
     println("MCMXCIV = ${romanToInt("MCMXCIV")}")
 }

@@ -69,12 +69,19 @@ fun strStr2(haystack: String, needle: String): Int {
 
 fun main() {
     println(strStr("hello", "ll"))
+
     println(strStr("aaaaa", "bba"))
+
     println(strStr("aaa", "aaa"))
+
     println(strStr("aaa", "aaaa"))
+
     println(strStr("a", "a"))
+
     println(strStr("mississippi", "issipi"))
+
     println(strStr("mississippi", "issip"))
+
     println(strStr("mississippi", "pi"))
 }
 
