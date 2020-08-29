@@ -2,6 +2,13 @@ package com.harsh.sharma.leetcode.easy
 
 import com.harsh.sharma.leetcode.util.ListNode
 
+/*
+
+    83. Remove Duplicates from Sorted List
+
+    https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+
+ */
 
 fun deleteDuplicates(head: ListNode?): ListNode? {
     var current = head

@@ -2,7 +2,7 @@ package com.harsh.sharma.leetcode.easy
 
 /*
 
-    53. Maximum Subarray
+    53. Maximum Sub array
 
     https://leetcode.com/problems/maximum-subarray/
 
