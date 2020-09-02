@@ -7,54 +7,56 @@ package com.harsh.sharma.leetcode.easy
 
  */
 
+class ReverseInteger {
 
-fun reverse(x: Int): Int {
-    var result = 0
-    var temp = x
-    while (temp != 0) {
-        var remainder = temp % 10
-        temp /= 10
-        if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && remainder > 7)) return 0
-        if (result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE / 10 && remainder < -8)) return 0
-        result = result * 10 + remainder
+    fun reverse(x: Int): Int {
+        var result = 0
+        var temp = x
+        while (temp != 0) {
+            var remainder = temp % 10
+            temp /= 10
+            if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && remainder > 7)) return 0
+            if (result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE / 10 && remainder < -8)) return 0
+            result = result * 10 + remainder
+        }
+        return result;
     }
-    return result;
-}
 
 
-fun Int.reverseItKotlinWay(): Int {
-    var result = 0
-    var temp = this
-    while (temp != 0) {
-        var remainder = temp % 10
-        temp /= 10
-        if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && remainder > 7)) return 0
-        if (result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE / 10 && remainder < -8)) return 0
-        result = result * 10 + remainder
+    fun Int.reverseItKotlinWay(): Int {
+        var result = 0
+        var temp = this
+        while (temp != 0) {
+            var remainder = temp % 10
+            temp /= 10
+            if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && remainder > 7)) return 0
+            if (result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE / 10 && remainder < -8)) return 0
+            result = result * 10 + remainder
+        }
+        return result;
     }
-    return result;
-}
 
-fun reverseUsingLong(x: Int): Int {
-    var x = x
-    var res: Long = 0
-    while (x != 0) {
-        res = res * 10 + x % 10
-        x = x / 10
+    fun reverseUsingLong(x: Int): Int {
+        var x = x
+        var res: Long = 0
+        while (x != 0) {
+            res = res * 10 + x % 10
+            x = x / 10
+        }
+        return if (res < Int.MIN_VALUE || res > Int.MAX_VALUE) {
+            0
+        } else {
+            res.toInt()
+        }
     }
-    return if (res < Int.MIN_VALUE || res > Int.MAX_VALUE) {
-        0
-    } else {
-        res.toInt()
+
+    fun main() {
+        println((reverse(-555)))
+
+        println(123.reverseItKotlinWay())
+
+        println(reverseUsingLong(-123))
     }
-}
-fun main() {
-    println((reverse(-555)))
-
-    println(123.reverseItKotlinWay())
-
-    println(reverseUsingLong(-123))
-}
 
 
 /*
@@ -86,3 +88,5 @@ fun main() {
     we also have to consider MIN and MAX ranges for Integer
 
  */
+
+}

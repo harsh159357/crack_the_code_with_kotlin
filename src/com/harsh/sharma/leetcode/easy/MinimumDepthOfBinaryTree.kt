@@ -9,20 +9,23 @@ import com.harsh.sharma.leetcode.util.TreeNode
     https://leetcode.com/problems/minimum-depth-of-binary-tree/
 
  */
+class MinimumDepthOfBinaryTree {
 
-fun minDepth(root: TreeNode?): Int {
-    if (root==null){
-        return 0
+    fun minDepth(root: TreeNode?): Int {
+        if (root == null) {
+            return 0
+        }
+        return when {
+            root.left == null -> {
+                minDepth(root.right) + 1
+            }
+            root.right == null -> {
+                minDepth(root.left) + 1
+            }
+            else -> {
+                minOf(minDepth(root.left), minDepth(root.right)) + 1
+            }
+        }
     }
-    return when {
-        root.left==null -> {
-            minDepth(root.right)+1
-        }
-        root.right==null -> {
-            minDepth(root.left)+1
-        }
-        else -> {
-            minOf(minDepth(root.left),minDepth(root.right))+1
-        }
-    }
+
 }

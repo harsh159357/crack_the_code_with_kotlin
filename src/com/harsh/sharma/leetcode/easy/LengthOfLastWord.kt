@@ -8,48 +8,52 @@ package com.harsh.sharma.leetcode.easy
 
  */
 
-fun lengthOfLastWordOneLiner(s: String): Int {
-    return s.trim().length - s.trim().lastIndexOf(" ") - 1;
-}
+class LengthOfLastWord {
 
-fun lengthOfLastWordNotOptimized(s: String): Int {
-    val split = s.trim().split(" ")
-
-    return when (split.size) {
-        0 -> 0
-        else -> split.last().length
+    fun lengthOfLastWordOneLiner(s: String): Int {
+        return s.trim().length - s.trim().lastIndexOf(" ") - 1;
     }
-}
 
-fun lengthOfLastWord(s: String): Int {
-    var count = 0
-    val ch = s.toCharArray()
-    var index = s.length - 1
-    for (i in s.length - 1 downTo 0) {
-        if (ch[i] == ' ' && index == i) {
-            index--
-        } else if (ch[i] != ' ') {
-            count++
-        } else break
+    fun lengthOfLastWordNotOptimized(s: String): Int {
+        val split = s.trim().split(" ")
+
+        return when (split.size) {
+            0 -> 0
+            else -> split.last().length
+        }
     }
-    return count
-}
 
-fun main() {
-    println(lengthOfLastWord(""))
-    println(lengthOfLastWord(" "))
+    fun lengthOfLastWord(s: String): Int {
+        var count = 0
+        val ch = s.toCharArray()
+        var index = s.length - 1
+        for (i in s.length - 1 downTo 0) {
+            if (ch[i] == ' ' && index == i) {
+                index--
+            } else if (ch[i] != ' ') {
+                count++
+            } else break
+        }
+        return count
+    }
 
-    println(lengthOfLastWord("a "))
-    println(lengthOfLastWord("a"))
-    println(lengthOfLastWord(" a"))
-    println(lengthOfLastWord(" a "))
-    println(lengthOfLastWord("   a  "))
+    fun main() {
+        println(lengthOfLastWord(""))
+        println(lengthOfLastWord(" "))
 
-    println(lengthOfLastWord(" Hello World"))
-    println(lengthOfLastWord("  Hello World  "))
-    println(lengthOfLastWord(" Hello World "))
-    println(lengthOfLastWord("  Hello    World   Kotlin  "))
-    println(lengthOfLastWord("       HelloWorld"))
+        println(lengthOfLastWord("a "))
+        println(lengthOfLastWord("a"))
+        println(lengthOfLastWord(" a"))
+        println(lengthOfLastWord(" a "))
+        println(lengthOfLastWord("   a  "))
 
-    println(lengthOfLastWord("Today is a nice day"))
+        println(lengthOfLastWord(" Hello World"))
+        println(lengthOfLastWord("  Hello World  "))
+        println(lengthOfLastWord(" Hello World "))
+        println(lengthOfLastWord("  Hello    World   Kotlin  "))
+        println(lengthOfLastWord("       HelloWorld"))
+
+        println(lengthOfLastWord("Today is a nice day"))
+    }
+
 }

@@ -9,11 +9,13 @@ import com.harsh.sharma.leetcode.util.TreeNode
     https://leetcode.com/problems/same-tree/
 
  */
+class SameTree {
 
-// Fastest Solution Available
-fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean =
-    (p == null && q == null) ||
-            ((p?.`val` == q?.`val`) &&
-                    isSameTree(p?.left, q?.left) &&
-                    isSameTree(p?.right, q?.right))
+    // Fastest Solution Available
+    fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean =
+        (p == null && q == null) ||
+                ((p?.`val` == q?.`val`) &&
+                        isSameTree(p?.left, q?.left) &&
+                        isSameTree(p?.right, q?.right))
 
+}
