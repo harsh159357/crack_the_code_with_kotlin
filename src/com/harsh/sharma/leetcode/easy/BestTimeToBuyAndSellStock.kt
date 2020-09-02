@@ -7,32 +7,28 @@ package com.harsh.sharma.leetcode.easy
 
  */
 
-class BestTimeToBuyAndSellStock {
-
-    fun maxProfitBruteForce(prices: IntArray): Int {
-        var maxProfit = 0
-        for (i in 0 until prices.size - 1) {
-            for (j in i + 1 until prices.size) {
-                val profit = prices[j] - prices[i]
-                if (profit > maxProfit) maxProfit = profit
-            }
+fun maxProfitBruteForce(prices: IntArray): Int {
+    var maxProfit = 0
+    for (i in 0 until prices.size - 1) {
+        for (j in i + 1 until prices.size) {
+            val profit = prices[j] - prices[i]
+            if (profit > maxProfit) maxProfit = profit
         }
-        return maxProfit
     }
+    return maxProfit
+}
 
-    fun maxProfitOnePass(prices: IntArray): Int {
-        var minPrice = Int.MAX_VALUE
-        var maxProfit = 0
-        for (i in prices.indices) {
-            if (prices[i] < minPrice) minPrice =
-                prices[i] else if (prices[i] - minPrice > maxProfit) maxProfit = prices[i] - minPrice
-        }
-        return maxProfit
+fun maxProfitOnePass(prices: IntArray): Int {
+    var minPrice = Int.MAX_VALUE
+    var maxProfit = 0
+    for (i in prices.indices) {
+        if (prices[i] < minPrice) minPrice =
+            prices[i] else if (prices[i] - minPrice > maxProfit) maxProfit = prices[i] - minPrice
     }
+    return maxProfit
+}
 
-    fun main() {
-        println(maxProfitOnePass(intArrayOf(7, 1, 5, 3, 6, 4)))
-        println(maxProfitOnePass(intArrayOf(7, 6, 4, 3, 1)))
-    }
-
+fun main() {
+    println(maxProfitOnePass(intArrayOf(7,1,5,3,6,4)))
+    println(maxProfitOnePass(intArrayOf(7,6,4,3,1)))
 }
