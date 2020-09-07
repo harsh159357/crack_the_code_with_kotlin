@@ -9,8 +9,8 @@ package com.harsh.sharma.leetcode.easy
 
 // Brute Force
 fun twoSum1(nums: IntArray, target: Int): IntArray {
-    for (i in 0..nums.size - 1) {
-        for (j in (i + 1)..nums.size - 1) {
+    for (i in nums.indices) {
+        for (j in (i + 1) until nums.size) {
             if ((nums[i] + nums[j]) == target) {
                 return intArrayOf(i, j)
             }
@@ -41,9 +41,9 @@ fun twoSum3(nums: IntArray, target: Int): IntArray {
     for (i in nums.indices) {
         val complement = target - nums[i]
         if (map.containsKey(complement)) {
-            return intArrayOf(map.get(complement)!!, i)
+            return intArrayOf(map[complement]!!, i)
         } else {
-            map.put(nums[i], i)
+            map[nums[i]] = i
         }
     }
     return intArrayOf(0, 0)
