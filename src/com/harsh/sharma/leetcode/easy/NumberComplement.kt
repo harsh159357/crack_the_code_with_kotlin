@@ -24,7 +24,7 @@ fun findComplementTwo(num: Int): Int {
     return num.inv().shl(leadingZeroes).shr(leadingZeroes)
 }
 
-fun main() {666666666666
+fun main() {
     println(findComplementTwo(5))
     println(findComplementTwo(1))
 }
