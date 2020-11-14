@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     204. Count Primes
@@ -33,8 +35,8 @@ fun countPrimes(n: Int): Int {
 }
 
 fun main() {
-    println(countPrimes(10))
-    println(countPrimes(1))
-    println(countPrimes(2))
-    println(countPrimes(1000000))
+    countPrimes(10).printAndNewLine()
+    countPrimes(1).printAndNewLine()
+    countPrimes(2).printAndNewLine()
+    countPrimes(1000000).printAndNewLine()
 }

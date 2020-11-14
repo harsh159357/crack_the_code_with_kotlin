@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import kotlin.math.max
 
 /*
@@ -42,6 +43,6 @@ fun robTwo(nums: IntArray): Int {
 }
 
 fun main() {
-    println(robOne(intArrayOf(1,2,3,1)))
-    println(robOne(intArrayOf(2,7,9,3,1)))
+    robOne(intArrayOf(1, 2, 3, 1)).printAndNewLine()
+    robOne(intArrayOf(2, 7, 9, 3, 1)).printAndNewLine()
 }

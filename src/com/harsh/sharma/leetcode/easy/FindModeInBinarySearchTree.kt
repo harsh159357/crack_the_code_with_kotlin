@@ -15,13 +15,13 @@ fun findMode(root: TreeNode?): IntArray {
     addElementIntoMap(root, map)
     var maxIndex = 0
     for (mutableEntry in map) {
-        if (mutableEntry.value > maxIndex){
+        if (mutableEntry.value > maxIndex) {
             maxIndex = mutableEntry.value
         }
     }
     val mutableListOf = mutableListOf<Int>()
     for (mutableEntry in map) {
-        if (mutableEntry.value == maxIndex){
+        if (mutableEntry.value == maxIndex) {
             mutableListOf.add(mutableEntry.key)
         }
     }
@@ -34,7 +34,7 @@ private fun addElementIntoMap(root: TreeNode?, map: HashMap<Int, Int>) {
         if (times != null) {
             map[root.`val`] = times + 1
 
-        }else{
+        } else {
             map[root.`val`] = 0
         }
         addElementIntoMap(root.left, map)

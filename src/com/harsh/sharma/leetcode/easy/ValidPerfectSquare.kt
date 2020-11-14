@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     367. Valid Perfect Square
@@ -29,14 +31,14 @@ fun isPerfectSquareOne(num: Int): Boolean {
 
 
 fun isPerfectSquareTwo(num: Int): Boolean {
-    if(num == 1) return true
+    if (num == 1) return true
     var low = 0
     var high = num
     var mid = 0
     for (i in 0..10000) {
         mid = (high - low) / 2 + low
         if (mid == 0) return false
-        val square = mid*mid
+        val square = mid * mid
         when {
             willOverflow(mid.toLong()) -> high = mid
             square == num -> return true
@@ -46,11 +48,12 @@ fun isPerfectSquareTwo(num: Int): Boolean {
     }
     return false
 }
-fun willOverflow(x:Long) : Boolean =
-    x*x > Int.MAX_VALUE
+
+fun willOverflow(x: Long): Boolean =
+    x * x > Int.MAX_VALUE
 
 fun main() {
-    println(isPerfectSquareOne(16))
-    println(isPerfectSquareOne(14))
-    println(isPerfectSquareOne(25))
+    isPerfectSquareOne(16).printAndNewLine()
+    isPerfectSquareOne(14).printAndNewLine()
+    isPerfectSquareOne(25).printAndNewLine()
 }

@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import kotlin.math.pow
 
 /*
@@ -28,8 +29,8 @@ private fun titleToNumberTwo(s: String): Int {
 }
 
 fun main() {
-    println(titleToNumberOne("A"))      //1
-    println(titleToNumberOne("AB"))     //28
-    println(titleToNumberOne("ZY"))     //701
-    println(titleToNumberOne("AAA"))    //703
+    titleToNumberOne("A").printAndNewLine()      //1
+    titleToNumberOne("AB").printAndNewLine()     //28
+    titleToNumberOne("ZY").printAndNewLine()     //701
+    titleToNumberOne("AAA").printAndNewLine()    //703
 }

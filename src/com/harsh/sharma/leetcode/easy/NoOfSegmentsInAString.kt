@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     434. Number of Segments in a String
@@ -26,8 +28,8 @@ fun countSegmentsInPlace(s: String): Int {
 }
 
 fun main() {
-    println(countSegmentsInPlace("Hello, my name is John"))
-    println(countSegmentsInPlace("Hello"))
-    println(countSegmentsInPlace("love live! mu'sic forever"))
-    println(countSegmentsInPlace(""))
+    countSegmentsInPlace("Hello, my name is John").printAndNewLine()
+    countSegmentsInPlace("Hello").printAndNewLine()
+    countSegmentsInPlace("love live! mu'sic forever").printAndNewLine()
+    countSegmentsInPlace("").printAndNewLine()
 }

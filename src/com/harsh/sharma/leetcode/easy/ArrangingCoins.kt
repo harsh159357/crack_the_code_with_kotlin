@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     441. Arranging Coins
@@ -31,6 +33,6 @@ fun arrangeCoinsTwo(n: Int): Int {
 }
 
 fun main() {
-    println(arrangeCoinsOne(5))
-    println(arrangeCoinsTwo(8))
+    arrangeCoinsOne(5).printAndNewLine()
+    arrangeCoinsTwo(8).printAndNewLine()
 }

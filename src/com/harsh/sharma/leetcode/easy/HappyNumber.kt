@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     202. Happy Number
@@ -66,14 +68,14 @@ fun isHappy(n: Int): Boolean {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 fun main() {
-    println(isHappy(34))
-    println(isHappy(7))
-    println(isHappy(8))
-    println(isHappy(82))
-    println(isHappy(68))
-    println(isHappy(100))
-    println(isHappy(1))
-    println(isHappy(10000000))
-    println(isHappy(0x6ffffff))
-    println(isHappy(128319))
+    isHappy(34).printAndNewLine()
+    isHappy(7).printAndNewLine()
+    isHappy(8).printAndNewLine()
+    isHappy(82).printAndNewLine()
+    isHappy(68).printAndNewLine()
+    isHappy(100).printAndNewLine()
+    isHappy(1).printAndNewLine()
+    isHappy(10000000).printAndNewLine()
+    isHappy(0x6ffffff).printAndNewLine()
+    isHappy(128319).printAndNewLine()
 }

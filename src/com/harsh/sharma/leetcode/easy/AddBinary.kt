@@ -52,20 +52,20 @@ fun convertBinaryToDecimal(input: Long): Int {
 }
 
 
-
-
 fun main() {
     // https://www.tutorialspoint.com/how-to-convert-binary-to-decimal (Binary To Decimal Tutorial)
 
-    println("" +
-            "101 [${convertBinaryToDecimal(101)}]" +
-            " + 1 [${convertBinaryToDecimal(1)}] " +
-            "= ${addBinary("101", "1")} [${convertBinaryToDecimal(110)}]"
+    println(
+        "" +
+                "101 [${convertBinaryToDecimal(101)}]" +
+                " + 1 [${convertBinaryToDecimal(1)}] " +
+                "= ${addBinary("101", "1")} [${convertBinaryToDecimal(110)}]"
     )
 
-    println("" +
-            "1010 [${convertBinaryToDecimal(1010)}]" +
-            " + 1111 [${convertBinaryToDecimal(1111)}] " +
-            "= ${addBinary("1010", "1111")} [${convertBinaryToDecimal(11001)}]"
+    println(
+        "" +
+                "1010 [${convertBinaryToDecimal(1010)}]" +
+                " + 1111 [${convertBinaryToDecimal(1111)}] " +
+                "= ${addBinary("1010", "1111")} [${convertBinaryToDecimal(11001)}]"
     )
 }

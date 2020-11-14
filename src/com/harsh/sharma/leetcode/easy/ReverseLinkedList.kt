@@ -11,7 +11,7 @@ import com.harsh.sharma.leetcode.util.ListNode
  */
 
 fun reverseList(head: ListNode?): ListNode? {
-    var pre:ListNode? = null
+    var pre: ListNode? = null
     var current = head
     while (current != null) {
         var temp = current.next

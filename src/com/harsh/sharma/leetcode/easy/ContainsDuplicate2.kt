@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     219. Contains Duplicate II
@@ -43,10 +45,10 @@ fun containsNearbyDuplicateWorst(nums: IntArray, k: Int): Boolean {
 }
 
 fun main() {
-    println(containsNearbyDuplicateOne(intArrayOf(1, 2, 3, 1), 3))
-    println(containsNearbyDuplicateOne(intArrayOf(1, 0, 1, 1), 1))
-    println(containsNearbyDuplicateOne(intArrayOf(1, 2, 3, 1, 2, 3), 2))
-    println(containsNearbyDuplicateOne(intArrayOf(), 2))
-    println(containsNearbyDuplicateOne(intArrayOf(1, 1), 1))
-    println(containsNearbyDuplicateOne(intArrayOf(1, 1), 2))
+    containsNearbyDuplicateOne(intArrayOf(1, 2, 3, 1), 3).printAndNewLine()
+    containsNearbyDuplicateOne(intArrayOf(1, 0, 1, 1), 1).printAndNewLine()
+    containsNearbyDuplicateOne(intArrayOf(1, 2, 3, 1, 2, 3), 2).printAndNewLine()
+    containsNearbyDuplicateOne(intArrayOf(), 2).printAndNewLine()
+    containsNearbyDuplicateOne(intArrayOf(1, 1), 1).printAndNewLine()
+    containsNearbyDuplicateOne(intArrayOf(1, 1), 2).printAndNewLine()
 }

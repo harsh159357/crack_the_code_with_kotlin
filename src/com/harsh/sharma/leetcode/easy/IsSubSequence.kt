@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     392. Is Subsequence
@@ -20,6 +22,6 @@ fun isSubsequence(s: String, t: String): Boolean {
 }
 
 fun main() {
-    println(isSubsequence("abc","ahbgdc"))
-    println(isSubsequence("axc","ahbgdc"))
+    isSubsequence("abc", "ahbgdc").printAndNewLine()
+    isSubsequence("axc", "ahbgdc").printAndNewLine()
 }

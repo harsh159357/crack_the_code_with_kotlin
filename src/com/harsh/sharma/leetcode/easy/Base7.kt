@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     504. Base 7
@@ -27,6 +29,6 @@ fun convertToBase7(num: Int): String {
 }
 
 fun main() {
-    println(convertToBase7(100))
-    println(convertToBase7(-7))
+    convertToBase7(100).printAndNewLine()
+    convertToBase7(-7).printAndNewLine()
 }

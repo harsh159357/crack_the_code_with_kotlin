@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     342. Power of Four
@@ -32,6 +34,6 @@ fun isPowerOfFourTwo(num: Int): Boolean {
 }
 
 fun main() {
-    println(isPowerOfFourTwo(16))
-    println(isPowerOfFourTwo(5))
+    isPowerOfFourTwo(16).printAndNewLine()
+    isPowerOfFourTwo(5).printAndNewLine()
 }

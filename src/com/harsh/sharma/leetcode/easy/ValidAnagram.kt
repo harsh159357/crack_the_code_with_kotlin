@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 
@@ -40,6 +41,6 @@ fun isAnagram(s: String, t: String): Boolean {
 }
 
 fun main() {
-    println(isAnagram("anagram","nagaram"))
-    println(isAnagram("rat","car"))
+    isAnagram("anagram", "nagaram").printAndNewLine()
+    isAnagram("rat", "car").printAndNewLine()
 }

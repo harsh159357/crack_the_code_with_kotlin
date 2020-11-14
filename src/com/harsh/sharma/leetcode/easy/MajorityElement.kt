@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 
@@ -135,6 +136,6 @@ fun majorityElement(nums: IntArray): Int {
 }
 
 fun main() {
-    println(majorityElement(intArrayOf(3, 2, 3)))
-    println(majorityElement(intArrayOf(2, 2, 1, 1, 1, 2, 2)))
+    majorityElement(intArrayOf(3, 2, 3)).printAndNewLine()
+    majorityElement(intArrayOf(2, 2, 1, 1, 1, 2, 2)).printAndNewLine()
 }

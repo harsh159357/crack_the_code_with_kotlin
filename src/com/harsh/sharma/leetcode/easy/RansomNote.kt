@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     383. Ransom Note
@@ -28,7 +30,7 @@ fun canConstruct(ransomNote: String, magazine: String): Boolean {
 }
 
 fun main() {
-    println(canConstruct("a","b"))
-    println(canConstruct("aa","ab"))
-    println(canConstruct("aa","aab"))
+    canConstruct("a", "b").printAndNewLine()
+    canConstruct("aa", "ab").printAndNewLine()
+    canConstruct("aa", "aab").printAndNewLine()
 }

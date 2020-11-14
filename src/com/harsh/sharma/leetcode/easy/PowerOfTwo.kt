@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import kotlin.math.log10
 
 /*
@@ -21,18 +22,18 @@ fun isPowerOfTwo2(n: Int): Boolean {
 }
 
 fun isPowerOfTwo3(n: Int): Boolean {
-    return n > 0 && (n and n-1 == 0)
+    return n > 0 && (n and n - 1 == 0)
 }
 
 fun main() {
-    println(isPowerOfTwo3(2))
-    println(isPowerOfTwo3(4))
-    println(isPowerOfTwo3(6))
-    println(isPowerOfTwo3(8))
-    println(isPowerOfTwo3(10))
-    println(isPowerOfTwo3(12))
-    println(isPowerOfTwo3(14))
-    println(isPowerOfTwo3(16))
-    println(isPowerOfTwo3(18))
-    println(isPowerOfTwo3(20))
+    isPowerOfTwo3(2).printAndNewLine()
+    isPowerOfTwo3(4).printAndNewLine()
+    isPowerOfTwo3(6).printAndNewLine()
+    isPowerOfTwo3(8).printAndNewLine()
+    isPowerOfTwo3(10).printAndNewLine()
+    isPowerOfTwo3(12).printAndNewLine()
+    isPowerOfTwo3(14).printAndNewLine()
+    isPowerOfTwo3(16).printAndNewLine()
+    isPowerOfTwo3(18).printAndNewLine()
+    isPowerOfTwo3(20).printAndNewLine()
 }

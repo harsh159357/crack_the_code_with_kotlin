@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -59,6 +60,7 @@ fun climbStairsDp(n: Int): Int {
     }
     return dp[n]
 }
+
 //Fibonacci Number
 fun climbStairsFn(n: Int): Int {
     if (n == 1) {
@@ -75,12 +77,12 @@ fun climbStairsFn(n: Int): Int {
 }
 
 // One Liner
-fun climbStairs(n: Int) = sqrt(5.0).let { Math.round(((1.0 + it)/2.0).pow(n + 1.0)/it).toInt() }
+fun climbStairs(n: Int) = sqrt(5.0).let { Math.round(((1.0 + it) / 2.0).pow(n + 1.0) / it).toInt() }
 
 fun main() {
-    println(climbStairsMemoIzation(45))
-    println(climbStairsMemoIzation(30))
-    println(climbStairsMemoIzation(15))
-    println(climbStairsMemoIzation(10))
-    println(climbStairsMemoIzation(5))
+    climbStairsMemoIzation(45).printAndNewLine()
+    climbStairsMemoIzation(30).printAndNewLine()
+    climbStairsMemoIzation(15).printAndNewLine()
+    climbStairsMemoIzation(10).printAndNewLine()
+    climbStairsMemoIzation(5).printAndNewLine()
 }

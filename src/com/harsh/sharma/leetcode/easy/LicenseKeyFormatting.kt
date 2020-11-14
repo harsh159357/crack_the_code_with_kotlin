@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     482. License Key Formatting
@@ -32,6 +34,6 @@ fun licenseKeyFormattingTwo(S: String, K: Int): String {
 }
 
 fun main() {
-    println(licenseKeyFormattingOne("5F3Z-2e-9-w", 4))
-    println(licenseKeyFormattingOne("2-5g-3-J", 2))
+    licenseKeyFormattingOne("5F3Z-2e-9-w", 4).printAndNewLine()
+    licenseKeyFormattingOne("2-5g-3-J", 2).printAndNewLine()
 }

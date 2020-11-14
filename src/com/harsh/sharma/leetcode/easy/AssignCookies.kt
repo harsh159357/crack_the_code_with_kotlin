@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     455. Assign Cookies
@@ -26,6 +28,6 @@ fun findContentChildren(g: IntArray, s: IntArray): Int {
 }
 
 fun main() {
-    println(findContentChildren(intArrayOf(1,2,3), intArrayOf(1,1)))
-    println(findContentChildren(intArrayOf(1,2), intArrayOf(1,2,3)))
+    findContentChildren(intArrayOf(1, 2, 3), intArrayOf(1, 1)).printAndNewLine()
+    findContentChildren(intArrayOf(1, 2), intArrayOf(1, 2, 3)).printAndNewLine()
 }

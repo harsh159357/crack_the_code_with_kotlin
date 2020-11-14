@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     263. Ugly Number
@@ -46,7 +48,7 @@ fun isUglyTwo(num: Int): Boolean {
 
 
 fun main() {
-    println(isUglyOne(6))
-    println(isUglyOne(8))
-    println(isUglyOne(14))
+    isUglyOne(6).printAndNewLine()
+    isUglyOne(8).printAndNewLine()
+    isUglyOne(14).printAndNewLine()
 }

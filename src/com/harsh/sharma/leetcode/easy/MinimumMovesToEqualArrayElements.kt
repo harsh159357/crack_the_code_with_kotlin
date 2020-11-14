@@ -13,5 +13,5 @@ fun minMoves(nums: IntArray): Int {
 }
 
 fun main() {
-    println(intArrayOf(1,2,3))
+    println(intArrayOf(1, 2, 3))
 }

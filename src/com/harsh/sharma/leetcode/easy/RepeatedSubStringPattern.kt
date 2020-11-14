@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     459. Repeated Substring Pattern
@@ -35,7 +37,7 @@ fun repeatedSubstringPattern(s: String): Boolean {
 
 
 fun main() {
-    println(repeatedSubstringPattern("abab"))
-    println(repeatedSubstringPattern("aba"))
-    println(repeatedSubstringPattern("abcabcabcabc"))
+    repeatedSubstringPattern("abab").printAndNewLine()
+    repeatedSubstringPattern("aba").printAndNewLine()
+    repeatedSubstringPattern("abcabcabcabc").printAndNewLine()
 }

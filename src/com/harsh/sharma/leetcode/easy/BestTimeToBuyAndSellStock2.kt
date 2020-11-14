@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     122. Best Time to Buy and Sell Stock II
@@ -51,6 +53,6 @@ fun maxProfit(prices: IntArray): Int {
 }
 
 fun main() {
-    println(maxProfit(intArrayOf(7,1,5,3,6,4)))
-    println(maxProfit(intArrayOf(1,2,3,4,5)))
+    maxProfit(intArrayOf(7, 1, 5, 3, 6, 4)).printAndNewLine()
+    maxProfit(intArrayOf(1, 2, 3, 4, 5)).printAndNewLine()
 }

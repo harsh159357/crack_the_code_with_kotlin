@@ -23,7 +23,7 @@ fun toHexOne(num: Int): String {
 
 fun toHexTwo(num: Int): String {
     return (0..7)
-        .takeWhile { if ((num) >= 0) num >= it shl 4 else num <= it shl 4}
+        .takeWhile { if ((num) >= 0) num >= it shl 4 else num <= it shl 4 }
         .map { "0123456789abcdef"[(num ushr (it * 4)) and 0xf].toString() }
         .reduce { acc, s -> acc + s }
         .substringBeforeLast("0")

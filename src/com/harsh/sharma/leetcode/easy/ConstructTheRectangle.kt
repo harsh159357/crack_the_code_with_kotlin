@@ -1,7 +1,8 @@
 package com.harsh.sharma.leetcode.easy
 
-import kotlin.math.sqrt
+import com.harsh.sharma.leetcode.util.printArrayElementsEndNewLine
 import kotlin.math.roundToInt
+import kotlin.math.sqrt
 
 /*
 
@@ -23,13 +24,7 @@ fun constructRectangle(area: Int): IntArray {
 }
 
 fun main() {
-    println(constructRectangle(4).forEach {
-        print("$it\t")
-    })
-    println(constructRectangle(37).forEach {
-        print("$it\t")
-    })
-    println(constructRectangle(122122).forEach {
-        print("$it\t")
-    })
+    constructRectangle(4).printArrayElementsEndNewLine()
+    constructRectangle(37).printArrayElementsEndNewLine()
+    constructRectangle(122122).printArrayElementsEndNewLine()
 }

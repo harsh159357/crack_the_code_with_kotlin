@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     345. Reverse Vowels of a String
@@ -49,6 +51,6 @@ fun reverseVowelsTwo(s: String): String {
 }
 
 fun main() {
-    println(reverseVowelsOne("hello"))
-    println(reverseVowelsOne("leetcode"))
+    reverseVowelsOne("hello").printAndNewLine()
+    reverseVowelsOne("leetcode").printAndNewLine()
 }

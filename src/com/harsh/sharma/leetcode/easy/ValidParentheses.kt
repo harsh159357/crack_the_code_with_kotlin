@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 /*
@@ -34,13 +35,13 @@ fun isValid(s: String): Boolean {
 }
 
 fun main() {
-    println(if (isValid("()")) "Valid" else "Not Valid")
+    (if (isValid("()")) "Valid" else "Not Valid").printAndNewLine()
 
-    println(if (isValid("()[]{}")) "Valid" else "Not Valid")
+    (if (isValid("()[]{}")) "Valid" else "Not Valid").printAndNewLine()
 
-    println(if (isValid("(]")) "Valid" else "Not Valid")
+    (if (isValid("(]")) "Valid" else "Not Valid").printAndNewLine()
 
-    println(if (isValid("([)]")) "Valid" else "Not Valid")
+    (if (isValid("([)]")) "Valid" else "Not Valid").printAndNewLine()
 
-    println(if (isValid("{[]}")) "Valid" else "Not Valid")
+    (if (isValid("{[]}")) "Valid" else "Not Valid").printAndNewLine()
 }

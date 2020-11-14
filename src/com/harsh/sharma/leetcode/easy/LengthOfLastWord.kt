@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     58. Length of Last Word
@@ -36,20 +38,20 @@ fun lengthOfLastWord(s: String): Int {
 }
 
 fun main() {
-    println(lengthOfLastWord(""))
-    println(lengthOfLastWord(" "))
+    lengthOfLastWord("").printAndNewLine()
+    lengthOfLastWord(" ").printAndNewLine()
 
-    println(lengthOfLastWord("a "))
-    println(lengthOfLastWord("a"))
-    println(lengthOfLastWord(" a"))
-    println(lengthOfLastWord(" a "))
-    println(lengthOfLastWord("   a  "))
+    lengthOfLastWord("a ").printAndNewLine()
+    lengthOfLastWord("a").printAndNewLine()
+    lengthOfLastWord(" a").printAndNewLine()
+    lengthOfLastWord(" a ").printAndNewLine()
+    lengthOfLastWord("   a  ").printAndNewLine()
 
-    println(lengthOfLastWord(" Hello World"))
-    println(lengthOfLastWord("  Hello World  "))
-    println(lengthOfLastWord(" Hello World "))
-    println(lengthOfLastWord("  Hello    World   Kotlin  "))
-    println(lengthOfLastWord("       HelloWorld"))
+    lengthOfLastWord(" Hello World").printAndNewLine()
+    lengthOfLastWord("  Hello World  ").printAndNewLine()
+    lengthOfLastWord(" Hello World ").printAndNewLine()
+    lengthOfLastWord("  Hello    World   Kotlin  ").printAndNewLine()
+    lengthOfLastWord("       HelloWorld").printAndNewLine()
 
-    println(lengthOfLastWord("Today is a nice day"))
+    lengthOfLastWord("Today is a nice day").printAndNewLine()
 }

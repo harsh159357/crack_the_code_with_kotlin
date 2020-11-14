@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     172. Factorial Trailing Zeroes
@@ -35,12 +37,12 @@ fun trailingZeroesBest(n: Int): Int {
 }
 
 fun main() {
-    println(trailingZeroesBest(3))
-    println(trailingZeroesBest(5))
-    println(trailingZeroesBest(10))
-    println(trailingZeroesBest(20))
-    println(trailingZeroesBest(30))
-    println(trailingZeroesBest(2331))
-    println(trailingZeroesBest(2371))
-    println(trailingZeroesBest(1808548329))
+    trailingZeroesBest(3).printAndNewLine()
+    trailingZeroesBest(5).printAndNewLine()
+    trailingZeroesBest(10).printAndNewLine()
+    trailingZeroesBest(20).printAndNewLine()
+    trailingZeroesBest(30).printAndNewLine()
+    trailingZeroesBest(2331).printAndNewLine()
+    trailingZeroesBest(2371).printAndNewLine()
+    trailingZeroesBest(1808548329).printAndNewLine()
 }

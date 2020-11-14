@@ -11,18 +11,18 @@ import com.harsh.sharma.leetcode.util.TreeNode
  */
 
 fun minDepth(root: TreeNode?): Int {
-    if (root==null){
+    if (root == null) {
         return 0
     }
     return when {
-        root.left==null -> {
-            minDepth(root.right)+1
+        root.left == null -> {
+            minDepth(root.right) + 1
         }
-        root.right==null -> {
-            minDepth(root.left)+1
+        root.right == null -> {
+            minDepth(root.left) + 1
         }
         else -> {
-            minOf(minDepth(root.left),minDepth(root.right))+1
+            minOf(minDepth(root.left), minDepth(root.right)) + 1
         }
     }
 }

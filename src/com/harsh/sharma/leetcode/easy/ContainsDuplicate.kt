@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 
@@ -38,7 +39,7 @@ fun containsDuplicateHashTable(nums: IntArray): Boolean {
 }
 
 fun main() {
-    println(containsDuplicateSorting(intArrayOf(1,2,3,1)))
-    println(containsDuplicateSorting(intArrayOf(1,2,3,4)))
-    println(containsDuplicateSorting(intArrayOf(1,1,1,3,3,4,3,2,4,2)))
+    containsDuplicateSorting(intArrayOf(1, 2, 3, 1)).printAndNewLine()
+    containsDuplicateSorting(intArrayOf(1, 2, 3, 4)).printAndNewLine()
+    containsDuplicateSorting(intArrayOf(1, 1, 1, 3, 3, 4, 3, 2, 4, 2)).printAndNewLine()
 }

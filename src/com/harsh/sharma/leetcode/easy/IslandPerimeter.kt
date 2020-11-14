@@ -34,16 +34,19 @@ private fun count(grid: Array<IntArray>, r: Int, c: Int): Int {
 }
 
 fun main() {
-    println(islandPerimeter(
-        arrayOf(
+    println(
+        islandPerimeter(
+            arrayOf(
                 intArrayOf(0, 1, 0, 0),
                 intArrayOf(1, 1, 1, 0),
                 intArrayOf(0, 1, 0, 0),
                 intArrayOf(1, 1, 0, 0)
-            )))
+            )
+        )
+    )
 
     println(islandPerimeter(arrayOf(intArrayOf(1))))
 
-    println(islandPerimeter(arrayOf(intArrayOf(1,0))))
+    println(islandPerimeter(arrayOf(intArrayOf(1, 0))))
 
 }

@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     485. Max Consecutive Ones
@@ -21,5 +23,5 @@ fun findMaxConsecutiveOnes(nums: IntArray): Int {
 }
 
 fun main() {
-    println(findMaxConsecutiveOnes(intArrayOf(1, 1, 0, 1, 1, 1)))
+    findMaxConsecutiveOnes(intArrayOf(1, 1, 0, 1, 1, 1)).printAndNewLine()
 }

@@ -12,8 +12,8 @@ package com.harsh.sharma.leetcode.easy
 
 /**
 
-    /* The isBadVersion API is defined in the parent class VersionControl.
-    def isBadVersion(version: Int): Boolean = {} */
+/* The isBadVersion API is defined in the parent class VersionControl.
+def isBadVersion(version: Int): Boolean = {} */
 
  */
 

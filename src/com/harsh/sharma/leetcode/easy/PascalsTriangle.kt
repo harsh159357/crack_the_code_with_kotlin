@@ -48,7 +48,7 @@ fun generate(numRows: Int): List<MutableList<Int>>? {
 fun main() {
     println("Pascal's Triangle for input 5 \n=========================")
     for (item in generate(5)!!) {
-        for(iterate in item) {
+        for (iterate in item) {
             print(iterate)
         }
         println()
@@ -57,7 +57,7 @@ fun main() {
 
     println("Pascal's Triangle for input 4 \n=========================")
     for (item in generate(4)!!) {
-        for(iterate in item) {
+        for (iterate in item) {
             print(iterate)
         }
         println()
@@ -66,7 +66,7 @@ fun main() {
 
     println("Pascal's Triangle for input 7 \n=========================")
     for (item in generate(7)!!) {
-        for(iterate in item) {
+        for (iterate in item) {
             print(iterate)
         }
         println()
@@ -74,7 +74,7 @@ fun main() {
     println("=========================")
     println("Pascal's Triangle for input 9 \n=========================")
     for (item in generate(9)!!) {
-        for(iterate in item) {
+        for (iterate in item) {
             print(iterate)
         }
         println()

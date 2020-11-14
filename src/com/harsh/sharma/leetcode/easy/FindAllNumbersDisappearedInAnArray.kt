@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printArrayElements
+
 /*
 
     448. Find All Numbers Disappeared in an Array
@@ -30,9 +32,9 @@ fun findDisappearedNumbers(nums: IntArray): List<Int> {
     nums.indices.forEach { i ->
         nums[(nums[i] - 1) % nums.size] += nums.size
     }
-    return (1..nums.size).filter { nums[it-1] <= nums.size }.toList()
+    return (1..nums.size).filter { nums[it - 1] <= nums.size }.toList()
 }
 
 fun main() {
-    println(findDisappearedNumbers(intArrayOf(4,3,2,7,8,2,3,1)))
+    findDisappearedNumbers(intArrayOf(4, 3, 2, 7, 8, 2, 3, 1)).printArrayElements()
 }

@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     461. Hamming Distance
@@ -21,5 +23,5 @@ fun hammingDistance(x: Int, y: Int): Int {
 }
 
 fun main() {
-    println(hammingDistance(1,4))
+    hammingDistance(1, 4).printAndNewLine()
 }

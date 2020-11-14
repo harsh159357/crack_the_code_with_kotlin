@@ -24,7 +24,8 @@ fun romanToInt(s: String): Int {
                     (c == 'I' || c == 'X' || c == 'C') &&
                             i + 1 < s.length &&
                             map.get(s.get(i + 1))!! > map.get(c)!!
-                    ))
+                    )
+        )
 
             res -= map.get(c)!!
         else

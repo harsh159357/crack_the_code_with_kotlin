@@ -8,7 +8,7 @@ package com.harsh.sharma.leetcode.easy
 
  */
 
-fun moveZeroes(nums: IntArray): Unit {
+fun moveZeroes(nums: IntArray) {
     var lastNonZeroFoundAt = 0
     for (i in nums.indices) {
         if (nums[i] != 0) {

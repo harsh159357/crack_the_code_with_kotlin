@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 
@@ -60,6 +61,6 @@ fun singleNumber(nums: IntArray): Int {
 
 
 fun main() {
-    println(singleNumber(intArrayOf(2, 2, 1)))
-    println(singleNumber(intArrayOf(4, 1, 2, 1, 2)))
+    singleNumber(intArrayOf(2, 2, 1)).printAndNewLine()
+    singleNumber(intArrayOf(4, 1, 2, 1, 2)).printAndNewLine()
 }

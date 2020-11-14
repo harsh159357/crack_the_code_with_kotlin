@@ -25,12 +25,12 @@ fun intersect(nums1: IntArray, nums2: IntArray): IntArray {
 }
 
 fun main() {
-    for (i in intersection(intArrayOf(1,2,2,1), intArrayOf(2,2))!!) {
+    for (i in intersection(intArrayOf(1, 2, 2, 1), intArrayOf(2, 2))!!) {
         print("$i ")
     }
     println()
 
-    for (j in intersection(intArrayOf(4,9,5), intArrayOf(9,4,9,8,4))!!) {
+    for (j in intersection(intArrayOf(4, 9, 5), intArrayOf(9, 4, 9, 8, 4))!!) {
         print("$j ")
     }
 }

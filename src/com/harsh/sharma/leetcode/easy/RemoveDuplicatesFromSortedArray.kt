@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     26. Remove Duplicates from Sorted Array
@@ -22,9 +24,7 @@ fun removeDuplicates(nums: IntArray): Int {
 }
 
 fun main() {
-    println(removeDuplicates(intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)))
-
-    println(removeDuplicates(intArrayOf(1, 1, 2)))
-
-    println(removeDuplicates(intArrayOf(1,1,2,2,3,3)))
+    removeDuplicates(intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)).printAndNewLine()
+    removeDuplicates(intArrayOf(1, 1, 2)).printAndNewLine()
+    removeDuplicates(intArrayOf(1, 1, 2, 2, 3, 3)).printAndNewLine()
 }

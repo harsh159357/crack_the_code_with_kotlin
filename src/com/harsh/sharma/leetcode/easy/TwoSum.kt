@@ -1,4 +1,7 @@
 package com.harsh.sharma.leetcode.easy
+
+import com.harsh.sharma.leetcode.util.printArrayElementsEndNewLine
+
 /*
 
     1. Two Sum
@@ -51,19 +54,12 @@ fun twoSum3(nums: IntArray, target: Int): IntArray {
 
 fun main() {
     println("Brute Force")
-    for (i in twoSum1(intArrayOf(2, 7, 11, 15), 9)) {
-        print("$i ")
-    }
-    println()
+    twoSum1(intArrayOf(2, 7, 11, 15), 9).printArrayElementsEndNewLine()
+
     println("Two Pass")
-    for (i in twoSum2(intArrayOf(1, 5, 6, 15), 11)) {
-        print("$i ")
-    }
-    println()
+    twoSum2(intArrayOf(1, 5, 6, 15), 11).printArrayElementsEndNewLine()
+
     println("One Pass")
-    for (i in twoSum2(intArrayOf(4, 8, 10, 13), 17)) {
-        print("$i ")
-    }
-    println()
+    twoSum2(intArrayOf(4, 8, 10, 13), 17).printArrayElementsEndNewLine()
 }
 

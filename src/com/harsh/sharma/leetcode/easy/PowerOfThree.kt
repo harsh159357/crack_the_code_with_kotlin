@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import kotlin.math.log10
 
 /*
@@ -30,8 +31,8 @@ fun isPowerOfThree(n: Int): Boolean {
 }
 
 fun main() {
-    println(isPowerOfThree(27))
-    println(isPowerOfThree(0))
-    println(isPowerOfThree(9))
-    println(isPowerOfThree(45))
+    isPowerOfThree(27).printAndNewLine()
+    isPowerOfThree(0).printAndNewLine()
+    isPowerOfThree(9).printAndNewLine()
+    isPowerOfThree(45).printAndNewLine()
 }

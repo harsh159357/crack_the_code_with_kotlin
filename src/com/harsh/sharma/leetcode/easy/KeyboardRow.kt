@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printArrayElements
+
 /*
 
     500. Keyboard Row
@@ -26,7 +28,5 @@ fun findWords(words: Array<String>): Array<String> {
 }
 
 fun main() {
-    println(findWords(arrayOf("Hello","Alaska","Dad","Peace")).forEach {
-        print("$it\t")
-    })
+    findWords(arrayOf("Hello", "Alaska", "Dad", "Peace")).printArrayElements()
 }

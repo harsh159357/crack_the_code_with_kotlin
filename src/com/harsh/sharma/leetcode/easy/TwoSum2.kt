@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printArrayElements
+
 /*
 
     167. Two Sum II - Input array is sorted
@@ -22,7 +24,5 @@ fun twoSum(numbers: IntArray, target: Int): IntArray {
 }
 
 fun main() {
-    for (i in twoSum2(intArrayOf(4, 8, 10, 13), 17)) {
-        print("$i ")
-    }
+    twoSum2(intArrayOf(4, 8, 10, 13), 17).printArrayElements()
 }

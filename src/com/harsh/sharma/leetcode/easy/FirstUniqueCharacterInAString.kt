@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 
@@ -28,6 +29,6 @@ fun firstUniqChar(s: String): Int {
 }
 
 fun main() {
-    println(firstUniqChar("leetcode"))
-    println(firstUniqChar("loveleetcode"))
+    firstUniqChar("leetcode").printAndNewLine()
+    firstUniqChar("loveleetcode").printAndNewLine()
 }

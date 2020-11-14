@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     205. Isomorphic Strings
@@ -34,8 +36,8 @@ fun isIsomorphicTwo(s: String, t: String): Boolean {
 }
 
 fun main() {
-    println(isIsomorphicOne("egg", "add"))
-    println(isIsomorphicOne("foo", "bar"))
-    println(isIsomorphicOne("paper", "title"))
-    println(isIsomorphicOne("ab", "aa"))
+    isIsomorphicOne("egg", "add").printAndNewLine()
+    isIsomorphicOne("foo", "bar").printAndNewLine()
+    isIsomorphicOne("paper", "title").printAndNewLine()
+    isIsomorphicOne("ab", "aa").printAndNewLine()
 }

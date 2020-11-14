@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printArrayElementsEndNewLine
+
 /*
 
     496. Next Greater Element I
@@ -29,10 +31,6 @@ fun nextGreaterElement(nums1: IntArray, nums2: IntArray): IntArray {
 }
 
 fun main() {
-    println(nextGreaterElement(intArrayOf(4, 1, 2), intArrayOf(1, 3, 4, 2)).forEach {
-        print("$it\t")
-    })
-    println(nextGreaterElement(intArrayOf(2, 4), intArrayOf(1, 2, 3, 4)).forEach {
-        print("$it\t")
-    })
+    nextGreaterElement(intArrayOf(4, 1, 2), intArrayOf(1, 3, 4, 2)).printArrayElementsEndNewLine()
+    nextGreaterElement(intArrayOf(2, 4), intArrayOf(1, 2, 3, 4)).printArrayElementsEndNewLine()
 }

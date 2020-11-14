@@ -3,8 +3,6 @@ package com.harsh.sharma.leetcode.easy
 import com.harsh.sharma.leetcode.util.ListNode
 
 
-
-
 /*
 
     237. Delete Node in a Linked List

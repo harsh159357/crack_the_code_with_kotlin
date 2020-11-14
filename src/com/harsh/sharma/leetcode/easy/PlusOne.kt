@@ -55,11 +55,53 @@ fun main() {
         plusOne(intArrayOf(1, 2, 3)),
         plusOne(intArrayOf(4, 3, 2, 1)),
         // Your solution will fail for this input if you have used Integer.parseInt
-        plusOne(intArrayOf(9,8,7,6,5,4,3,2,1,0)),
+        plusOne(intArrayOf(9, 8, 7, 6, 5, 4, 3, 2, 1, 0)),
         // Your solution will fail for this input if you have used Long.parseLong
-        plusOne(intArrayOf(7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6))
+        plusOne(
+            intArrayOf(
+                7,
+                2,
+                8,
+                5,
+                0,
+                9,
+                1,
+                2,
+                9,
+                5,
+                3,
+                6,
+                6,
+                7,
+                3,
+                2,
+                8,
+                4,
+                3,
+                7,
+                9,
+                5,
+                7,
+                7,
+                4,
+                7,
+                4,
+                9,
+                4,
+                7,
+                0,
+                1,
+                1,
+                1,
+                7,
+                4,
+                0,
+                0,
+                6
+            )
+        )
         // So BigInteger needs to be used for parsing for above two
-        )) {
+    )) {
 
         for (item in array) {
             print("$item\t")
@@ -74,8 +116,50 @@ fun main() {
         plusOneOptimized(intArrayOf(9)),
         plusOneOptimized(intArrayOf(1, 2, 3)),
         plusOneOptimized(intArrayOf(4, 3, 2, 1)),
-        plusOneOptimized(intArrayOf(9,8,7,6,5,4,3,2,1,0)),
-        plusOneOptimized(intArrayOf(7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6))
+        plusOneOptimized(intArrayOf(9, 8, 7, 6, 5, 4, 3, 2, 1, 0)),
+        plusOneOptimized(
+            intArrayOf(
+                7,
+                2,
+                8,
+                5,
+                0,
+                9,
+                1,
+                2,
+                9,
+                5,
+                3,
+                6,
+                6,
+                7,
+                3,
+                2,
+                8,
+                4,
+                3,
+                7,
+                9,
+                5,
+                7,
+                7,
+                4,
+                7,
+                4,
+                9,
+                4,
+                7,
+                0,
+                1,
+                1,
+                1,
+                7,
+                4,
+                0,
+                0,
+                6
+            )
+        )
     )) {
 
         for (item in array) {

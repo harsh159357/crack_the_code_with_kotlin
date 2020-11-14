@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     168. Excel Sheet Column Title
@@ -31,11 +33,11 @@ fun convertToTitle(n: Int): String {
 }
 
 fun main() {
-    println(convertToTitle(1)) // "A"
-    println(convertToTitle(2)) // "B"
-    println(convertToTitle(3)) // "C"
-    println(convertToTitle(26)) // "Z"
-    println(convertToTitle(27)) // "AA"
-    println(convertToTitle(28)) // "AB"
-    println(convertToTitle(701)) // "ZY"
+    convertToTitle(1).printAndNewLine() // "A"
+    convertToTitle(2).printAndNewLine() // "B"
+    convertToTitle(3).printAndNewLine() // "C"
+    convertToTitle(26).printAndNewLine() // "Z"
+    convertToTitle(27).printAndNewLine() // "AA"
+    convertToTitle(28).printAndNewLine() // "AB"
+    convertToTitle(701).printAndNewLine() // "ZY"
 }

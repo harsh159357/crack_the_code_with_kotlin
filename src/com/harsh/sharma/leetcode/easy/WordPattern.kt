@@ -1,7 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
-
 
 /*
 
@@ -35,8 +35,8 @@ fun wordPatternTwoHashMaps(pattern: String, s: String): Boolean {
 }
 
 fun main() {
-    println(wordPatternTwoHashMaps("abba","dog cat cat dog"))
-    println(wordPatternTwoHashMaps("abba","dog cat cat fish"))
-    println(wordPatternTwoHashMaps("aaaa","dog cat cat dog"))
-    println(wordPatternTwoHashMaps("abba","dog dog dog dog"))
+    wordPatternTwoHashMaps("abba", "dog cat cat dog").printAndNewLine()
+    wordPatternTwoHashMaps("abba", "dog cat cat fish").printAndNewLine()
+    wordPatternTwoHashMaps("aaaa", "dog cat cat dog").printAndNewLine()
+    wordPatternTwoHashMaps("abba", "dog dog dog dog").printAndNewLine()
 }

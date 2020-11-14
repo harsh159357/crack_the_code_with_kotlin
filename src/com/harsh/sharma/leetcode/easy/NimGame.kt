@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     292. Nim Game
@@ -13,7 +15,7 @@ fun canWinNim(n: Int): Boolean {
 }
 
 fun main() {
-    println(canWinNim(4))
-    println(canWinNim(1))
-    println(canWinNim(2))
+    canWinNim(4).printAndNewLine()
+    canWinNim(1).printAndNewLine()
+    canWinNim(2).printAndNewLine()
 }

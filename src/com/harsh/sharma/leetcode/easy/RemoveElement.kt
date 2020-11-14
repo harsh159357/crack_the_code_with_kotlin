@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     27. Remove Element
@@ -9,9 +11,9 @@ package com.harsh.sharma.leetcode.easy
  */
 fun removeElement(nums: IntArray, `val`: Int): Int {
     var i = 0
-    for(j in nums.indices) {
-        if(nums[j]!= `val`) {
-            nums[i]=nums[j]
+    for (j in nums.indices) {
+        if (nums[j] != `val`) {
+            nums[i] = nums[j]
             i++
         }
     }
@@ -33,11 +35,8 @@ fun removeElement2(nums: IntArray, `val`: Int): Int {
 }
 
 fun main() {
-    println(removeElement(intArrayOf(3, 2, 2, 3), 3))
-
-    println(removeElement(intArrayOf(0,1,2,2,3,0,4,2), 3))
-
-    println(removeElement2(intArrayOf(3, 2, 2, 3), 3))
-
-    println(removeElement2(intArrayOf(0,1,2,2,3,0,4,2), 3))
+    removeElement(intArrayOf(3, 2, 2, 3), 3).printAndNewLine()
+    removeElement(intArrayOf(0, 1, 2, 2, 3, 0, 4, 2), 3).printAndNewLine()
+    removeElement2(intArrayOf(3, 2, 2, 3), 3).printAndNewLine()
+    removeElement2(intArrayOf(0, 1, 2, 2, 3, 0, 4, 2), 3).printAndNewLine()
 }

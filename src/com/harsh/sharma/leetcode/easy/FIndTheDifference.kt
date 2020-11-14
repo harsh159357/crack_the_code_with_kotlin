@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     389. Find the Difference
@@ -16,8 +18,8 @@ fun findTheDifference(s: String, t: String): Char {
 }
 
 fun main() {
-    println(findTheDifference("abcd","abcde"))
-    println(findTheDifference("","y"))
-    println(findTheDifference("a","aa"))
-    println(findTheDifference("aea","ae"))
+    findTheDifference("abcd", "abcde").printAndNewLine()
+    findTheDifference("", "y").printAndNewLine()
+    findTheDifference("a", "aa").printAndNewLine()
+    findTheDifference("aea", "ae").printAndNewLine()
 }

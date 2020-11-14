@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     409. Longest Palindrome
@@ -20,7 +22,7 @@ fun longestPalindrome(s: String): Int {
 }
 
 fun main() {
-    println(longestPalindrome("abccccdd"))
-    println(longestPalindrome("a"))
-    println(longestPalindrome("b"))
+    longestPalindrome("abccccdd").printAndNewLine()
+    longestPalindrome("a").printAndNewLine()
+    longestPalindrome("b").printAndNewLine()
 }

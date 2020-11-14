@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     28. Implement strStr()
@@ -68,20 +70,20 @@ fun strStr2(haystack: String, needle: String): Int {
 }
 
 fun main() {
-    println(strStr("hello", "ll"))
+    strStr("hello", "ll").printAndNewLine()
 
-    println(strStr("aaaaa", "bba"))
+    strStr("aaaaa", "bba").printAndNewLine()
 
-    println(strStr("aaa", "aaa"))
+    strStr("aaa", "aaa").printAndNewLine()
 
-    println(strStr("aaa", "aaaa"))
+    strStr("aaa", "aaaa").printAndNewLine()
 
-    println(strStr("a", "a"))
+    strStr("a", "a").printAndNewLine()
 
-    println(strStr("mississippi", "issipi"))
+    strStr("mississippi", "issipi").printAndNewLine()
 
-    println(strStr("mississippi", "issip"))
+    strStr("mississippi", "issip").printAndNewLine()
 
-    println(strStr("mississippi", "pi"))
+    strStr("mississippi", "pi").printAndNewLine()
 }
 

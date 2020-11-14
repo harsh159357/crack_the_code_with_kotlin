@@ -16,7 +16,8 @@ fun checkBalanced(root: TreeNode?): Balance {
     root ?: return Balance(0, true)
     val leftBalance = checkBalanced(root.left)
     val rightBalance = checkBalanced(root.right)
-    val isBalanced = rightBalance.isBalanced && leftBalance.isBalanced && Math.abs(rightBalance.height - leftBalance.height) < 2
+    val isBalanced =
+        rightBalance.isBalanced && leftBalance.isBalanced && Math.abs(rightBalance.height - leftBalance.height) < 2
     val height = Math.max(rightBalance.height, leftBalance.height) + 1
     return Balance(height, isBalanced)
 }

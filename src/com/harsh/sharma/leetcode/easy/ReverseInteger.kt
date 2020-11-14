@@ -1,4 +1,7 @@
 package com.harsh.sharma.leetcode.easy
+
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     7. Reverse Integer
@@ -48,12 +51,11 @@ fun reverseUsingLong(x: Int): Int {
         res.toInt()
     }
 }
+
 fun main() {
-    println((reverse(-555)))
-
-    println(123.reverseItKotlinWay())
-
-    println(reverseUsingLong(-123))
+    (reverse(-555)).printAndNewLine()
+    123.reverseItKotlinWay().printAndNewLine()
+    reverseUsingLong(-123).printAndNewLine()
 }
 
 

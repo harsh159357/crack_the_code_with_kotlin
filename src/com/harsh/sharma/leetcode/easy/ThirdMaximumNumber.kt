@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 /*
@@ -49,7 +50,7 @@ fun thirdMax2(nums: IntArray): Int {
 }
 
 fun main() {
-    println(thirdMax2(intArrayOf(3, 2, 1)))
-    println(thirdMax2(intArrayOf(1, 2)))
-    println(thirdMax2(intArrayOf(2, 2, 3, 1)))
+    thirdMax2(intArrayOf(3, 2, 1)).printAndNewLine()
+    thirdMax2(intArrayOf(1, 2)).printAndNewLine()
+    thirdMax2(intArrayOf(2, 2, 3, 1)).printAndNewLine()
 }

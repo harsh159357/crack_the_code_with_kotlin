@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     35. Search Insert Position
@@ -45,16 +47,15 @@ fun searchInsertLessNoOfLines(nums: IntArray, target: Int): Int {
 }
 
 fun main() {
-    println(searchInsert(intArrayOf(1, 3, 5, 6), 5)) // 2
+    searchInsert(intArrayOf(1, 3, 5, 6), 5).printAndNewLine() // 2
 
-    println(searchInsert(intArrayOf(1, 3, 5, 6), 2)) // 1
+    searchInsert(intArrayOf(1, 3, 5, 6), 2).printAndNewLine() // 1
 
-    println(searchInsert(intArrayOf(1, 3, 5, 6), 7)) // 4
+    searchInsert(intArrayOf(1, 3, 5, 6), 7).printAndNewLine() // 4
 
-    println(searchInsert(intArrayOf(1, 3, 5, 6), 0)) // 0
+    searchInsert(intArrayOf(1, 3, 5, 6), 0).printAndNewLine() // 0
 
-    println(searchInsertOneLiner(intArrayOf(1, 3, 5, 6), 2)) // 1
+    searchInsertOneLiner(intArrayOf(1, 3, 5, 6), 2).printAndNewLine() // 1
 
-    println(searchInsertLessNoOfLines(intArrayOf(1, 3, 5, 6), 2)) // 1
-
+    searchInsertLessNoOfLines(intArrayOf(1, 3, 5, 6), 2).printAndNewLine() // 1
 }

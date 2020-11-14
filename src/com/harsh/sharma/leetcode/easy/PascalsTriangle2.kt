@@ -1,6 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
-import java.util.ArrayList
+import com.harsh.sharma.leetcode.util.printArrayElements
+import java.util.*
 
 /*
 
@@ -34,26 +35,16 @@ fun getRow(rowIndex: Int): List<Int> {
 
 fun main() {
     println("Pascal's Triangle for input 4 \n=========================")
-    for (item in getRow(4)) {
-        print("$item\t")
-    }
+    getRow(4).printArrayElements()
     println("\n=========================")
     println("Pascal's Triangle for input 5 \n=========================")
-    for (item in getRow(5)) {
-        print("$item\t")
-    }
+    getRow(5).printArrayElements()
     println("\n=========================")
-
     println("Pascal's Triangle for input 3 \n=========================")
-    for (item in getRow(3)) {
-        print("$item\t")
-    }
+    getRow(3).printArrayElements()
     println("\n=========================")
-
     println("Pascal's Triangle for input 11 \n=========================")
-    for (item in getRow(11)) {
-        print("$item\t")
-    }
+    getRow(11).printArrayElements()
     println("\n=========================")
 }
 

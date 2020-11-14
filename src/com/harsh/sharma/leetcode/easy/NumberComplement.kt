@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import kotlin.math.floor
 import kotlin.math.log2
 import kotlin.math.pow
@@ -25,7 +26,7 @@ fun findComplementTwo(num: Int): Int {
 }
 
 fun main() {
-    println(findComplementTwo(5))
-    println(findComplementTwo(1))
+    findComplementTwo(5).printAndNewLine()
+    findComplementTwo(1).printAndNewLine()
 }
 

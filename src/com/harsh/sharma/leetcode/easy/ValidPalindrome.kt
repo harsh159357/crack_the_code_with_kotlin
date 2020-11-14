@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     125. Valid Palindrome
@@ -46,6 +48,6 @@ fun isPalindrome(s: String): Boolean {
 }
 
 fun main() {
-    println(isPalindrome("A man, a plan, a canal: Panama"))
-    println(isPalindrome("0P"))
+    isPalindrome("A man, a plan, a canal: Panama").printAndNewLine()
+    isPalindrome("0P").printAndNewLine()
 }

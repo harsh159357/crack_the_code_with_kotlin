@@ -1,5 +1,7 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
+
 /*
 
     69. Sqrt(x)
@@ -35,10 +37,10 @@ fun mySqrt(x: Int): Int {
 }
 
 fun main() {
-    println(mySqrt(32765))
-    println(mySqrt(400))
-    println(mySqrt(625))
-    println(mySqrt(159357))
+    mySqrt(32765).printAndNewLine()
+    mySqrt(400).printAndNewLine()
+    mySqrt(625).printAndNewLine()
+    mySqrt(159357).printAndNewLine()
 }
 
 

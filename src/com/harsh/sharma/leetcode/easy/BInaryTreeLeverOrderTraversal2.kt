@@ -14,21 +14,21 @@ import java.util.concurrent.ConcurrentLinkedQueue
 fun levelOrderBottom(root: TreeNode?): List<List<Int>> {
     var ret = mutableListOf<List<Int>>()
     var queue = ConcurrentLinkedQueue<TreeNode>()
-    if(root == null) {
+    if (root == null) {
         return ret
     }
     queue.add(root)
-    while(queue.isNotEmpty()) {
+    while (queue.isNotEmpty()) {
         var list = mutableListOf<Int>()
         var size = queue.size
-        while(size > 0) {
+        while (size > 0) {
             var node = queue.poll()
             list.add(node.`val`)
             size--
-            if(node.left != null) {
+            if (node.left != null) {
                 queue.add(node.left)
             }
-            if(node.right != null) {
+            if (node.right != null) {
                 queue.add(node.right)
             }
         }

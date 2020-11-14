@@ -1,5 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
+import com.harsh.sharma.leetcode.util.printAndNewLine
 import java.util.*
 
 
@@ -61,8 +62,8 @@ fun missingNumberGaussFormula(nums: IntArray): Int {
 }
 
 fun main() {
-    println(missingNumberSorting(intArrayOf(3,0,1)))
-    println(missingNumberSorting(intArrayOf(0,1)))
-    println(missingNumberSorting(intArrayOf(9,6,4,2,3,5,7,0,1)))
-    println(missingNumberSorting(intArrayOf(0)))
+    missingNumberSorting(intArrayOf(3, 0, 1)).printAndNewLine()
+    missingNumberSorting(intArrayOf(0, 1)).printAndNewLine()
+    missingNumberSorting(intArrayOf(9, 6, 4, 2, 3, 5, 7, 0, 1)).printAndNewLine()
+    missingNumberSorting(intArrayOf(0)).printAndNewLine()
 }
