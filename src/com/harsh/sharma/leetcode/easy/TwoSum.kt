@@ -1,6 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
-import com.harsh.sharma.leetcode.util.printArrayElementsEndNewLine
+import com.harsh.sharma.util.printArrayElementsEndNewLine
 
 /*
 

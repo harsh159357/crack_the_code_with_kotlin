@@ -1,4 +1,4 @@
-package com.harsh.sharma.leetcode.util
+package com.harsh.sharma.util
 
 fun Int.printAndNewLine() {
     println(this)
@@ -47,4 +47,12 @@ fun Array<String>.printArrayElements() {
 fun Array<String>.printArrayElementsEndNewLine() {
     this.printArrayElements()
     println()
+}
+
+fun toArrayOfInt(intArray: IntArray): Array<Int> {
+    val convertedArray = Array(intArray.size) { 0 }
+    for (item in intArray.withIndex()) {
+        convertedArray[item.index] = item.value
+    }
+    return convertedArray
 }

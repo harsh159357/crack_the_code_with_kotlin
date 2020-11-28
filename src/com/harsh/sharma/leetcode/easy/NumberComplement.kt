@@ -1,6 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
-import com.harsh.sharma.leetcode.util.printAndNewLine
+import com.harsh.sharma.util.printAndNewLine
 import kotlin.math.floor
 import kotlin.math.log2
 import kotlin.math.pow

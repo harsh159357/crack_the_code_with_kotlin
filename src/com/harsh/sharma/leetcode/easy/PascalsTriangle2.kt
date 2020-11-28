@@ -1,6 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
-import com.harsh.sharma.leetcode.util.printArrayElements
+import com.harsh.sharma.util.printArrayElements
 import java.util.*
 
 /*

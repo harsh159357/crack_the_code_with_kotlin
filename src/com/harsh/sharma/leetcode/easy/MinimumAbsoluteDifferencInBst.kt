@@ -8,7 +8,7 @@ package com.harsh.sharma.leetcode.easy
 
  */
 
-import com.harsh.sharma.leetcode.util.TreeNode
+import com.harsh.sharma.util.TreeNode
 import kotlin.math.min
 
 var minRes = Int.MAX_VALUE

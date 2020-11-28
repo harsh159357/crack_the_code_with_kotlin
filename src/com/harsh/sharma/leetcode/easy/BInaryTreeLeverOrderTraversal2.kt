@@ -1,6 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
-import com.harsh.sharma.leetcode.util.TreeNode
+import com.harsh.sharma.util.TreeNode
 import java.util.concurrent.ConcurrentLinkedQueue
 
 /*

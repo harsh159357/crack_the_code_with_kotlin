@@ -1,6 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
-import com.harsh.sharma.leetcode.util.printAndNewLine
+import com.harsh.sharma.util.printAndNewLine
 import kotlin.math.pow
 import kotlin.math.sqrt
 

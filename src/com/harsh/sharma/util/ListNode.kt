@@ -1,4 +1,4 @@
-package com.harsh.sharma.leetcode.util
+package com.harsh.sharma.util
 
 class ListNode(@JvmField var `val`: Int) {
     @JvmField

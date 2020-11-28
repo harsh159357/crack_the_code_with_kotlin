@@ -1,6 +1,6 @@
 package com.harsh.sharma.leetcode.easy
 
-import com.harsh.sharma.leetcode.util.ListNode
+import com.harsh.sharma.util.ListNode
 import java.util.*
 
 
