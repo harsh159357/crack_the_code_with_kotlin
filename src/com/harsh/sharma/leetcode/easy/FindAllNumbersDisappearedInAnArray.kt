@@ -22,7 +22,7 @@ fun findDisappearedNumbersOne(nums: IntArray): List<Int> {
     return (1..nums.size).filter { nums[it - 1] != it }.toList()
 }
 
-private fun swap(nums: IntArray, x: Int, y: Int) {
+fun swap(nums: IntArray, x: Int, y: Int) {
     nums[x] += nums[y]
     nums[y] = nums[x] - nums[y]
     nums[x] -= nums[y]
