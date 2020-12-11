@@ -4,6 +4,10 @@ fun Int.printAndNewLine() {
     println(this)
 }
 
+fun Double.printAndNewLine() {
+    println(this)
+}
+
 fun String.printAndNewLine() {
     println(this)
 }
